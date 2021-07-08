@@ -1,4 +1,5 @@
 import random
+from math import factorial
 
 # infelizmente não consegui encontrar um dataset com variável de Bernoulli
 # por isso, criei um dataset no qual ha um probabilidade de uma moeda cair cara(0) ou coroa(1)
@@ -33,7 +34,7 @@ for x in dataset:
 # E(x)
 p = numberHeads/len(dataset)
 q = numberTails/len(dataset)
-print(f'E(x) = p = Chance de dar Coroa = {p*100:0.2f}%')
+print(f'E(x) = p = Chance de dar Coroa = {p}')
 print(f'q = {q:0.3f}')
 
 # VAR(x)
